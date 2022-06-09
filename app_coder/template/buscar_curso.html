@@ -1,0 +1,34 @@
+{%extends "padre.html"%}
+{%load static%}
+{%block contenido%}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busqueda de curso</title>
+</head>
+<body>
+
+    <h1><center><p>Buscar Curso</p></center></h1>
+    <!-- Search form -->
+    <form action="buscar" method="GET" class="form-inline d-flex justify-content-center md-form form-sm mt-0">
+        <i class="fas fa-search" aria-hidden="true"></i>
+        <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Buscar curso" aria-label="Search" name="nombre" id="nombre">
+          <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Buscar</button value="Buscar">
+        </form>
+
+      <center><p class="small fw-bold mt-2 pt-1 mb-0">¿Quieres cargar un curso?<a href="{% url 'alta_curso' %}" class="link-danger"> Haz click aquí</a></p></center>
+
+
+      <div><center>
+        <img src="{%  static 'app_coder/assets/img/cursos1.jpg' %}" class="grande" style="margin-top:30px">
+      </center>
+      </div>
+</body>
+</html>
+
+{%endblock%}

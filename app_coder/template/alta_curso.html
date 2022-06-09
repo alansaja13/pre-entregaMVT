@@ -1,0 +1,22 @@
+{% extends  "padre.html" %}
+{% load static %}
+{% block contenido %}
+<p></p>
+<h2><center>Cargar Curso</h2></center>
+<p></p>
+    <form class="form-inline" action="alta_curso" method="POST">
+        {% csrf_token %}
+        <center> <div class="form-group mx-sm-3">
+            <label for="inputUser" class="sr-only">Nombre</label>
+            <input type="text" class="form-control-sm" id="inputUser" placeholder="Nombre" name="nombre">
+        </div>
+        <p></p>
+        <div class="form-group mx-sm-3">
+            <label for="inputPass" class="sr-only">Camada</label>
+            <input type="number" class="form-control-sm" id="inputPass" placeholder="Camada" name="camada">
+        </div>
+        <p></p>
+        <button type="submit" class="btn btn-primary">Enviar</button></center>
+     </form>
+
+{% endblock %}

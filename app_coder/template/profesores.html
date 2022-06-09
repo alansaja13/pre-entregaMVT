@@ -1,0 +1,27 @@
+{% extends "padre.html" %}
+
+{%  load static %}
+
+
+{% block contenido %}
+
+<div>
+    <center> 
+        <h1 class="small fw-bold mt-3 pt-1 mb-0">¿Quieres cargar un profesor?<a href="{% url 'alta_profesores' %}"
+         class="link-danger"> Haz click aquí </a></h1>
+     </center>
+ </div>
+
+ <div>
+   
+     <center>
+            <img src="{%  static 'app_coder/assets/img/bg-showcase-2.jpg' %}" class="grande" style="margin-top:30px">
+     </center>
+        
+  
+ </div>
+
+</main>
+
+
+{% endblock %}
